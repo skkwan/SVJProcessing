@@ -6,6 +6,9 @@ from functools import partial
 
 import uproot
 
+import sys
+sys.path.append("..")
+
 from utils.misc import get_files_list, process_in_parallel
 from utils.Logger import *
 

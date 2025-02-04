@@ -3,6 +3,9 @@ import argparse
 import csv
 from pathlib import Path
 
+import os
+sys.path.append("..")
+
 from utils.Logger import *
 
 
@@ -137,5 +140,6 @@ def main ():
 
 
 if __name__ == "__main__":
+    
     main()
 
