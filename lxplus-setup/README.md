@@ -1,6 +1,6 @@
 # README
 
-1;95;0cThese are scripts used to perform the virtual environment setup in lxplus. They are modified slightly from [these instructions](https://github.com/jniedzie/SVJanalysis_wiki/wiki/Creating-SVJ-virtual-environment) to replace `mamba` calls with `conda`.
+These are approximately the steps used to set up a virtual environment in lxplus. They are modified slightly from [these instructions](https://github.com/jniedzie/SVJanalysis_wiki/wiki/Creating-SVJ-virtual-environment) and only take the most important packages.
 
 First I changed my conda install directories. In `~/.condarc` I pointed to areas with more space than my `/user/` area:
 ```
@@ -27,7 +27,7 @@ pip install awkward
 pip install coffea"==0.7.22"
 # continually run pip install for all remaining directories, Ctrl+Z and restart if it hangs
 # needed another directory with more space than /user
-pip install xrootd --cache-dir=/tmp/skkwan/devel-nano-skim/pip_cache"
+pip install xrootd --cache-dir=/tmp/skkwan/devel-nano-skim/pip_cache
 # needed an early enough version of setuptools, otherwise I got this error: https://github.com/scikit-hep/uproot5/issues/1259
 pip install setuptools"<71"
 ```
